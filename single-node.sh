@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Installing K3S"
-curl  -sfL https://get.k3s.io  | INSTALL_K3S_CHANNEL="v1.27" sh -
+curl  -sfL https://get.k3s.io  | INSTALL_K3S_CHANNEL="v1.30" sh -
 
 echo "Downlading cert-manager CRDs"
 wget -q -P /var/lib/rancher/k3s/server/manifests/ https://github.com/jetstack/cert-manager/releases/download/v1.5.1/cert-manager.crds.yaml
@@ -39,7 +39,7 @@ spec:
   targetNamespace: cattle-system
   repo: https://releases.rancher.com/server-charts/stable/
   chart: rancher
-  version: v2.8.4
+  version: v2.9.1
   set:
     ingress.tls.source: rancher
     hostname: rancher.ibrokethe.cloud
