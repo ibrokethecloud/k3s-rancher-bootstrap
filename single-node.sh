@@ -37,7 +37,7 @@ metadata:
   namespace: kube-system
 spec:
   targetNamespace: cattle-system
-  repo: https://releases.rancher.com/server-charts/stable/
+  repo: https://releases.rancher.com/server-charts/latest/
   chart: rancher
   version: v2.12.0
   set:
