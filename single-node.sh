@@ -39,7 +39,7 @@ spec:
   targetNamespace: cattle-system
   repo: https://releases.rancher.com/server-charts/latest/
   chart: rancher
-  version: v2.12.0
+  version: v2.13.0
   set:
     ingress.tls.source: rancher
     hostname: rancher.ibrokethe.cloud
